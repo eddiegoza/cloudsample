@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'd)=^c7!0-oqjmqve%(bt+p#sq6x*ipz2keh741j*-@f@_)f!1t'
 
 # Configure CSRF_TRUSTED_ORIGINS
-CSRF_TRUSTED_ORIGINS = ['https://todoappdjango-45py.onrender.com/', 'https://onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['https://todoappdjango-45py.onrender.com', 'https://onrender.com']
 
 # Ensure CSRF_USE_SESSIONS is set to False to use the CSRF_COOKIE
 CSRF_USE_SESSIONS = False
@@ -31,14 +31,14 @@ CSRF_USE_SESSIONS = False
 # Set CSRF_COOKIE_SAMESITE to 'None' for cross-site requests
 CSRF_COOKIE_SAMESITE = 'None'
 
+CSRF_COOKIE_DOMAIN = 'todoappdjango-45py.onrender.com'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
