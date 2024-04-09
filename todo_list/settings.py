@@ -22,9 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'd)=^c7!0-oqjmqve%(bt+p#sq6x*ipz2keh741j*-@f@_)f!1t'
 
-# Add this import at the top of the settings.py file
-from django.utils.http import same_origin
-
 # Configure CSRF_TRUSTED_ORIGINS
 CSRF_TRUSTED_ORIGINS = ['*']
 
