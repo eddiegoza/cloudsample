@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'd)=^c7!0-oqjmqve%(bt+p#sq6x*ipz2keh741j*-@f@_)f!1t'
 
 # Configure CSRF_TRUSTED_ORIGINS
-CSRF_TRUSTED_ORIGINS = ['https://todoappdjango-45py.onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['https://todoappdjango-45py.onrender.com/', 'https://onrender.com/']
 
 # Ensure CSRF_USE_SESSIONS is set to False to use the CSRF_COOKIE
 CSRF_USE_SESSIONS = False
@@ -32,7 +32,7 @@ CSRF_USE_SESSIONS = False
 CSRF_COOKIE_SAMESITE = 'None'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
