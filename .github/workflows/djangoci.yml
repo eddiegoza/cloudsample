@@ -28,3 +28,13 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+
+    - uses: mr-smithers-excellent/docker-build-push@v6
+      name: Build & push Docker image
+      with:
+        image: eddiegoza/cloudsample
+        tags: v1, latest
+        registry: registry-url.io
+        dockerfile: Dockerfile.ci
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
